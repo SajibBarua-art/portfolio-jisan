@@ -1,0 +1,135 @@
+.outside {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Horizontally centers the row */
+    align-items: center; /* Vertically centers the row */
+}
+
+.inside {
+    text-align: center; /* Optional: centers text inside the row */
+}
+
+.experience-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #EF3724;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.experience-card {
+    padding: 20px;
+    border-left: 4px solid #EF3724;
+    background-color: #f5f7fa;
+    border-radius: 8px;
+}
+
+.position {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.organization {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.roles-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.roles-list {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.roles-list li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .experience-section {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .position {
+        font-size: 18px;
+    }
+
+    .roles-title {
+        font-size: 16px;
+    }
+}
+
+.goals-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.goals-card {
+    padding: 20px;
+    border-left: 4px solid #EF3724;
+    background-color: #f1f8f6;
+    border-radius: 8px;
+}
+
+.goal-text {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .goals-section {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 20px;
+    }
+
+    .goal-text {
+        font-size: 14px;
+    }
+}
+
+.rounded-image {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Keep the same as width for a perfect circle */
+    border-radius: 50%; /* Makes the image fully rounded */
+    object-fit: cover; /* Ensures the image fits well inside the circle */
+    cursor: pointer; /* Adds a pointer cursor for clickable images */
+    border: 2px solid transparent; /* Optional: Add a subtle border */
+    transition: transform 0.2s ease; /* Optional: Adds a hover effect */
+}
+
+.rounded-image:hover {
+    transform: scale(1.1); /* Grows slightly on hover for an interactive feel */
+    border-color: #00796b; /* Optional: Changes border color on hover */
+}
